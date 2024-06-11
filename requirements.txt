@@ -1,0 +1,9 @@
+biopython
+pandas
+torch
+torchvision
+tqdm
+numpy
+matplotlib
+sklearn
+scipy
