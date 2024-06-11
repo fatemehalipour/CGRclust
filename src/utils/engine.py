@@ -101,7 +101,7 @@ def train(model: torch.nn.Module,
                "test_loss": [],
                "test_acc": []}
     # for epoch in tqdm(range(epochs)):
-    for epoch in tqdm(range(epochs)):
+    for epoch in range(epochs):
         lr = optimizer.param_groups[0]["lr"]
 
         train_loss = train_step(model=model,
