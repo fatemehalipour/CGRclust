@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
     ####################################################################################################################
     print("Reading the data...")
-    records_df = data_preprocess.read_fasta("../data/" + args.dataset)
+    records_df = data_preprocess.read_fasta("data/" + args.dataset)
     class_names = sorted(records_df.label.unique())
     class_to_idx = {class_name: i for i, class_name in enumerate(class_names)}
 
@@ -152,8 +152,8 @@ if __name__ == "__main__":
                     weight_decay=args.weight_decay,
                 )
                 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=200, gamma=0.9)
-                criterion_instance = loss_function.InstanceLoss(args.batch_size, args.temp_ins, device).to(device)
-                criterion_cluster = loss_function.ClusterLoss(len(class_names), args.temp_clu, device).to(device)
+                criterion_instance = loss_function.InstanceLoss(args.batch_size, temp_ins, device).to(device)
+                criterion_cluster = loss_function.ClusterLoss(len(class_names), temp_clu, device).to(device)
 
                 # start the timer
                 start_time = timer()
