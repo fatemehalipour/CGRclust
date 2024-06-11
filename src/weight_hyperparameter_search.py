@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     # Argument Parser
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset", default="01_Cypriniformes.fasta", type=str,
+    parser.add_argument("--dataset", default="1_Cypriniformes.fasta", type=str,
                         help="choose a fasta file in data directory")
     parser.add_argument("--k", default=6, type=int,
                         help="k-mer size, an integer between 6-8")
