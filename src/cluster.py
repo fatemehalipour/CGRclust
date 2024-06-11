@@ -54,7 +54,7 @@ if __name__ == "__main__":
     print(args)
 
     ####################################################################################################################
-    print("Reading the data...")
+    print("Reading the data... ")
     records_df = data_preprocess.read_fasta("data/" + args.dataset)
     class_names = sorted(records_df.label.unique())
     class_to_idx = {class_name: i for i, class_name in enumerate(class_names)}
