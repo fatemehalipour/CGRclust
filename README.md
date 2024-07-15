@@ -33,4 +33,3 @@ python3 src/cluster.py --dataset="01_Cypriniformes.fasta"
 | `--max_iter`   | Maximum number of iterations         | `300`         |
 | `--tol`        | Tolerance for convergence            | `0.0001`      |
 | `--random_state`| Seed used by the random number generator | `None`    |
-```
