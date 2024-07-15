@@ -23,13 +23,26 @@ pip install -r requirements.txt
 ```bash
 python3 src/cluster.py --dataset="01_Cypriniformes.fasta"
 ```
+
 ### Clustering parameters
 
-| Parameter      | Description                          | Default Value |
-|----------------|--------------------------------------|---------------|
-| `--dataset`    | Path to the input dataset file       | `"01_Cypriniformes.fasta"` |
-| `--method`     | Clustering method to be used         | `kmeans`      |
-| `--n_clusters` | Number of clusters to form           | `8`           |
-| `--max_iter`   | Maximum number of iterations         | `300`         |
-| `--tol`        | Tolerance for convergence            | `0.0001`      |
-| `--random_state`| Seed used by the random number generator | `None`    |
+| Parameter                     | Description                                              | Default Value               |
+|-------------------------------|----------------------------------------------------------|-----------------------------|
+| `--dataset`                   | Choose a fasta file in the data directory                | `"01_Cypriniformes.fasta"`  |
+| `--k`                         | k-mer size, an integer between 6-8                       | `6`                         |
+| `--weak_mutation_rate`        | Weak mutation rate for augmented data                    | `1e-4`                      |
+| `--strong_mutation_rate`      | Strong mutation rate for augmented data                  | `1e-2`                      |
+| `--weak_fragmentation_perc`   | Weak fragmentation percentage for augmented data         | `None`                      |
+| `--strong_fragmentation_perc` | Strong fragmentation percentage for augmented data       | `None`                      |
+| `--number_of_pairs`           | Number of augmented data pairs to generate               | `1`                         |
+| `--number_of_models`          | Number of models                                         | `5`                         |
+| `--lr`                        | Learning rate                                            | `7e-5`                      |
+| `--weight_decay`              | Weight decay                                             | `1e-4`                      |
+| `--temp_ins`                  | Instance temperature                                     | `0.1`                       |
+| `--temp_clu`                  | Cluster temperature                                      | `1.0`                       |
+| `--num_epochs`                | Number of epochs                                         | `150`                       |
+| `--batch_size`                | Batch size                                               | `512`                       |
+| `--embedding_dim`             | Embedding dimension                                      | `512`                       |
+| `--feature_dim`               | Feature dimension                                        | `128`                       |
+| `--random_seed`               | Random seed                                              | `0`                         |
+| `--weight`                    | Weight parameter (\alpha) that balances instance-level and cluster-level losses                                                 | `0.7`                       |
