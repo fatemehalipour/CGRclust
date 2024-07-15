@@ -28,7 +28,7 @@ python3 src/cluster.py --dataset="01_Cypriniformes.fasta"
 
 | Parameter                     | Description                                              | Default Value               |
 |-------------------------------|----------------------------------------------------------|-----------------------------|
-| `--dataset`                   | Choose a fasta file in the data directory                | `"01_Cypriniformes.fasta"`  |
+| `--dataset`                   | The path to an input fasta file in the data directory                | `"01_Cypriniformes.fasta"`  |
 | `--k`                         | k-mer size, an integer between 6-8                       | `6`                         |
 | `--weak_mutation_rate`        | Weak mutation rate for augmented data                    | `1e-4`                      |
 | `--strong_mutation_rate`      | Strong mutation rate for augmented data                  | `1e-2`                      |
