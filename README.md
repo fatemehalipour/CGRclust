@@ -45,4 +45,4 @@ python3 src/cluster.py --dataset="01_Cypriniformes.fasta"
 | `--embedding_dim`             | Embedding dimension                                      | `512`                       |
 | `--feature_dim`               | Feature dimension                                        | `128`                       |
 | `--random_seed`               | Random seed                                              | `0`                         |
-| `--weight`                    | Weight parameter (\alpha) that balances instance-level and cluster-level losses                                                 | `0.7`                       |
+| `--weight`                    | Weight parameter ($\alpha$) that balances instance-level and cluster-level losses                                                 | `0.7`                       |
