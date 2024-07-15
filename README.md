@@ -23,3 +23,14 @@ pip install -r requirements.txt
 ```bash
 python3 src/cluster.py --dataset="01_Cypriniformes.fasta"
 ```
+### Clustering parameters
+
+| Parameter      | Description                          | Default Value |
+|----------------|--------------------------------------|---------------|
+| `--dataset`    | Path to the input dataset file       | `"01_Cypriniformes.fasta"` |
+| `--method`     | Clustering method to be used         | `kmeans`      |
+| `--n_clusters` | Number of clusters to form           | `8`           |
+| `--max_iter`   | Maximum number of iterations         | `300`         |
+| `--tol`        | Tolerance for convergence            | `0.0001`      |
+| `--random_state`| Seed used by the random number generator | `None`    |
+```
