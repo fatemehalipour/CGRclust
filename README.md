@@ -15,8 +15,9 @@ CGRclust is a novel unsupervised clustering framework that utilizes Chaos Game R
 git clone https://github.com/yourgithubusername/CGRclust.git
 cd CGRclust
 pip install -r requirements.txt
-
+```
 
 ## Clustering
 ```bash
 python3 src/cluster.py --dataset="01_Cypriniformes.fasta"
+```
